@@ -13,7 +13,7 @@
 
                             <div class="col-md-10 mb-3">
                                 <label for="">Name <span>*</span></label>
-                                <input type="text" name="" id="">
+                                <input type="text" name="name" id="">
                             </div>
 
 
