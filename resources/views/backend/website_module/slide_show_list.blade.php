@@ -41,7 +41,6 @@
                                     <td></td>
                                 </tr>
 
-
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>Physical Training (PT)</td>

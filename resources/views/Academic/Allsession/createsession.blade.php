@@ -8,7 +8,7 @@
             </header>
             <div class="session_add">
                 <div class="row">
-                    
+
                    <form action="{{ route('insertsession') }}" method="POST">
                     @csrf
                             @if ($errors->any())
@@ -20,71 +20,71 @@
                             <label for="">Name <span>*</span></label>
                             <input type="text" placeholder="" value="{{ old('name') }}"  name="name" id="">
                         </div>
-        
+
                         <div class="col-md-10 mb-3">
                             <label for="">Short Code <span>*</span></label>
                             <input type="text" placeholder=" " value="{{ old('short_code') }}"  name="short_code" id="">
                         </div>
-        
-        
+
+
                         <div class="col-md-10 mb-3">
                             <label for="">Fiscal Year ? <span>*</span></label>
                         <p class="rad_text">
-                            <input type="radio"  placeholder="Education" name="physical_year" value="yes" id="check"> 
-                            <b>Yes</b> 
-                            </p> &nbsp; &nbsp; 
+                            <input type="radio"  placeholder="Education" name="physical_year" value="yes" id="check">
+                            <b>Yes</b>
+                            </p> &nbsp; &nbsp;
                             <p class="rad_text">
-                                <input type="radio" placeholder="Education" value="no" name="physical_year" id="check"> 
-                                <b>No</b> 
-                            </p> 
+                                <input type="radio" placeholder="Education" value="no" name="physical_year" id="check">
+                                <b>No</b>
+                            </p>
                         </div>
-        
+
                         <div class="col-md-10 mb-3">
                             <label for="">Current Session ?<span>*</span></label>
                         <p class="rad_text">
-                            <input type="radio" placeholder="Education" value="yes" name="current_session" id="check"> 
-                            <b>Yes</b> 
-                            </p> &nbsp; &nbsp; 
+                            <input type="radio" placeholder="Education" value="yes" name="current_session" id="check">
+                            <b>Yes</b>
+                            </p> &nbsp; &nbsp;
                             <p class="rad_text">
-                                <input type="radio" placeholder="Education" value="no" name="current_session" id="check"> 
-                                <b>No</b> 
-                            </p> 
+                                <input type="radio" placeholder="Education" value="no" name="current_session" id="check">
+                                <b>No</b>
+                            </p>
                         </div>
-        
+
                         <div class="col-md-12 mb-3">
                             <label for="">Result Type ?<span>*</span></label>
-                        <p class="rad_text">
-                            <input type="checkbox" placeholder="Education" name="percentageterms" id="check"> 
-                            <b>Percentage (Terms) </b> 
-                            </p> &nbsp; &nbsp; 
                             <p class="rad_text">
-                                &nbsp; <input type="checkbox" placeholder="Education" name="averageterms" id="check"> 
-                                <b>Average (Terms)</b> 
+                            <input type="checkbox" placeholder="Education" name="percentageterms" id="check">
+                            <b>Percentage (Terms) </b>
+                            </p> &nbsp; &nbsp;
+                            <p class="rad_text">
+                                &nbsp; <input type="checkbox" placeholder="Education" name="averageterms" id="check">
+                                <b>Average (Terms)</b>
                             </p>
                             <p class="rad_text">
-                                &nbsp;  <input type="checkbox" placeholder="Education" name="averagesubject" id="check"> 
-                                <b>Average (Subjects)</b> 
-                            </p>  
+                                &nbsp;  <input type="checkbox" placeholder="Education" name="averagesubject" id="check">
+                                <b>Average (Subjects)</b>
+                            </p>
                         </div>
-        
+
                         <div class="col-md-10 mb-3">
                             <label for="">Status <span>*</span></label>
                             <select name="status" id="">
                                 <option value="active" @if(old('status')=='active') selected @endif>Active</option>
                                 <option value="inactive" @if(old('status')=='inactive') selected @endif>Inactive</option>
-                            </select> 
+                            </select>
                         </div>
-        
+
                         <div class="col-md-10 mt-4 mb-3">
                             <p>
-                            <button type="submit" class="btn bg-gradient border-0 text-white">Create</button>        
+                            <button type="submit" class="btn bg-gradient border-0 text-white">Create</button>
                             {{-- <a href="" class="btn  cancel_btn border-0 text-white">Cancel</a>          --}}
                             </p>
                         </div>
-                    </form> 
+                    </form>
                 </div>
             </div>
-        </div>    
-    </section>                
+        </div>
+    </section>
 </div>
 @endsection

@@ -6,6 +6,7 @@ use App\Http\Controllers\backend\WebsiteModule\WebsiteModuleThreeController;
 use App\Http\Controllers\backend\WebsiteModule\WebsiteModuleFourController;
 use App\Http\Controllers\backend\WebsiteModule\WebsiteModuleFiveController;
 use Illuminate\Support\Facades\Route;
+
 Route::middleware('auth')->group(function () {
 // Route of WebsiteModuleOneController
 Route::get('/slideshow/list', [WebsiteModuleOneController::class, 'slideShow'])->name('slide_show');
