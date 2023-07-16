@@ -11,7 +11,7 @@
                     <div class="session_add">
                         <div class="row">
 
-                            <form action="" method="POST" enctype="multipart/form-data">
+                            <form action="{{ route('store_slide') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="col-md-10 mb-3">
                                     <label for="">Type <span>*</span></label>
@@ -54,8 +54,8 @@
 
                                 <div class="col-md-10 mt-4 mb-3">
                                     <p>
-                                        <a href="" class="btn bg-gradient border-0 text-white">Create</a>
-                                        <a href="" class="btn  cancel_btn border-0 text-white">Cancel</a>
+                                        <button class="btn bg-gradient border-0 text-white">Create</button>
+                                        <button class="btn  cancel_btn border-0 text-white">Cancel</button>
                                     </p>
                                 </div>
                             </form>

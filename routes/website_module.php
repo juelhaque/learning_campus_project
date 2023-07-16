@@ -16,6 +16,7 @@ Route::get('/manage/menu', [WebsiteModuleOneController::class, 'manageMenu'])->n
 Route::get('/add_slide/show', [WebsiteModuleOneController::class, 'addSlideShow'])->name('add_slide_show');
 Route::get('/add/message', [WebsiteModuleOneController::class, 'addMessage'])->name('add_message');
 Route::get('/add/menu', [WebsiteModuleOneController::class, 'addMenu'])->name('add_menu');
+Route::post('/store/slide', [WebsiteModuleOneController::class, 'storeSlide'])->name('store_slide');
 
 
 //Route of WebsiteModuleTwoController

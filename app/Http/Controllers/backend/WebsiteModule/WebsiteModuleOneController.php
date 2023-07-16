@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\backend\WebsiteModule;
 
 use App\Http\Controllers\Controller;
-
+use App\Models\AddSlideShow;
 use Illuminate\Http\Request;
 
 class WebsiteModuleOneController extends Controller
@@ -23,6 +23,7 @@ class WebsiteModuleOneController extends Controller
 
     // add section
     public function addSlideShow(){
+        
         return view('backend.website_module.add_folder.add_slide_show');
     }
 
@@ -32,6 +33,17 @@ class WebsiteModuleOneController extends Controller
 
     public function addMenu(){
         return view('backend.website_module.add_folder.add_menu');
+    }
+
+    public function storeSlice(Request $request){
+
+        AddSlideShow::create([
+            'title'=>$request->title,
+            'image'=>$request->image,
+            'description'=>$request->description
+        ]);
+
+        return redirect()->route('add_slide_show')->withMessage("Added Successfully!");
     }
 
 
