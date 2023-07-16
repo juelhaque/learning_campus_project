@@ -8,8 +8,6 @@ use App\Http\Controllers\backend\finance_reports_module\FinanceReportsController
 use App\Http\Controllers\backend\payroll_module\{PayrollHeadController, EmployeePayscaleController, EmployeesSalaryChartController, EmployeesSalaryController};
 use App\Http\Controllers\Hrmodule\HrmoduleController;
 use App\Http\Controllers\ExamSetting\ExamsettingController;
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
